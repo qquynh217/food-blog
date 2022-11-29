@@ -1,0 +1,41 @@
+.contact-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-input {
+    display: block;
+    outline: none;
+    border: none;
+    width: var(--input-width);
+    height: 48px;
+    background-color: var(--color-input);
+    padding: var(--input-padding);
+}
+
+#content {
+    min-height: 96px;
+}
+
+.error {
+    color: red;
+}
+
+.form-field {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-field+.input-field {
+    margin-top: 24px;
+}
+
+.input-field label {
+    font-size: 1.8rem;
+}
+
+.submit-btn {
+    margin: 24px 0 var(--button-footer-space);
+}

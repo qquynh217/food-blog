@@ -1,0 +1,51 @@
+.wrapper {
+    display: flex;
+    margin: 20px 0 50px;
+}
+
+.content {
+    margin-left: 20px;
+}
+
+.user-name {
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.time {
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+.text {
+    margin: 8px 0;
+}
+
+.divider {
+    margin-top: 20px;
+}
+
+.popover {
+    cursor: pointer;
+}
+
+.popover-icon {
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.body {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popover-item {
+    padding: 5px 20px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--color-footer);
+    }
+}

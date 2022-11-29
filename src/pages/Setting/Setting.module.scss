@@ -1,0 +1,96 @@
+.wrapper {
+    padding: 20px;
+}
+
+.title {
+    font-family: var(--title-font);
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.infor {
+    padding: 8px;
+
+    input[disabled] {
+        color: var(--color-grey);
+        cursor: not-allowed;
+        background-color: #f5f7fa;
+    }
+
+    label {
+        margin-top: 12px;
+    }
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.avatar {
+    margin-top: 20px;
+    width: 276px;
+    height: 276px;
+    object-fit: cover;
+    align-self: center;
+    border-radius: 50%;
+    font-size: 14rem;
+    box-shadow: 0 0 0 2px rgba(27, 31, 36, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input {
+    padding: var(--input-padding);
+    background-color: var(--color-input);
+    width: 100%;
+    border: none;
+    font-weight: 500;
+
+    &.bio {
+        min-height: 115px;
+    }
+
+}
+
+textarea {
+    outline: none;
+}
+
+.change-pass-btn {
+    position: absolute;
+    bottom: 5%;
+}
+
+.save-btn {
+    margin-top: 20px;
+}
+
+.avatar-field {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+
+    .input-ava {
+        margin-top: 20px;
+
+        * {
+            cursor: pointer;
+        }
+    }
+}
+
+.change-pass {
+    font-size: 1.6rem;
+
+    .input {
+        margin-bottom: 15px;
+    }
+}
+
+.disable {
+    opacity: 0.5;
+    pointer-events: none;
+}

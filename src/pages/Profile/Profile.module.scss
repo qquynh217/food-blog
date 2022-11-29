@@ -1,0 +1,45 @@
+.wrapper {
+    padding: 24px 32px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+
+    .avatar {
+        margin-top: 24px;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        align-self: center;
+        border-radius: 50%;
+        font-size: 14rem;
+        box-shadow: 0 0 0 2px rgba(27, 31, 36, 0.15);
+        display: flex;
+        align-items: center;
+    }
+
+    .full-name {
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+    .user-name {
+        color: var(--colors-dark);
+    }
+
+    .bio {
+        margin: 15px 0;
+    }
+}
+
+.user-project {
+
+    .title {
+        font-weight: 600;
+        font-size: 3.6rem;
+        border-bottom: 1.5px solid var(--color-grey);
+        margin-bottom: 15px;
+        font-family: var(--title-font);
+    }
+}

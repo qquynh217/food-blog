@@ -1,0 +1,27 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-family: var(--title-font);
+    font-size: 7.2rem;
+    font-weight: 600;
+    width: 60%;
+    text-align: center;
+
+    h1 {
+        margin: 0;
+    }
+}
+
+.padding {
+    padding: 15vh 0;
+}
+
+.description {
+    font-size: 2.4rem;
+    color: var(--colors-dark);
+    margin-top: 5vh;
+}

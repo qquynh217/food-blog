@@ -1,0 +1,10 @@
+.content-block {
+    width: var(--body-width);
+    margin: var(--header-height) auto 0;
+}
+
+@media only screen and (max-width: 1224px) {
+    .content-block {
+        width: 100%;
+    }
+}

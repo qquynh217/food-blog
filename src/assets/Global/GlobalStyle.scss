@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Montserrat:wght@100;300;400;500;600;800&family=Open+Sans:wght@300;400;500;600;800&family=Poppins:wght@200;300;500;700&family=Quicksand&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&family=Montserrat:wght@100;300;400;500;600;800&family=Open+Sans:wght@300;400;500;600;800&family=Poppins:wght@200;300;500;700&family=Quicksand&family=Roboto:wght@300;400&family=Source+Serif+Pro:wght@600;900&display=swap');
+
+:root {
+    --header-width: 1240px;
+    --header-height: 96px;
+    --footer-height: 479px;
+    --body-width: 1224px;
+    --primary-font: 'Open Sans', sans-serif;
+    --title-font: 'Source Serif Pro', serif;
+    --colors-dark: #232323;
+    --color-light: #fff;
+    --color-footer: #E8E3E1;
+    --color-grey: #858585;
+    --color-input: #f1f1f1;
+    --input-width-small: 400px;
+    --input-width: 600px;
+    --home-item-space: 80px;
+    --blog-item-space: 36px;
+    --button-footer-space: 50px;
+    --input-padding: 16px 56px 16px 16px;
+    --menu-width: 150px;
+    --post-width: 984px;
+    --post-header-padding: 48px 30px;
+    --post-content-padding: 48px 60px;
+    --about-space-between: 15vh;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+    text-rendering: optimizeSpeed;
+    text-decoration: none;
+    overflow-y: overlay;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+
+    &:hover {
+        color: inherit;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+.ant-divider {
+    margin: 0;
+}
+
+.ant-popover-inner-content {
+    padding: 0;
+}

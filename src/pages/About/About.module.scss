@@ -1,0 +1,29 @@
+.wrapper {
+    padding: 50px 0;
+}
+
+.banner-img,
+.intro-img {
+    width: 100%;
+}
+
+.banner-column {
+    display: flex;
+    align-items: center;
+}
+
+.banner-content {
+    font-size: 2.2rem;
+    font-weight: 500;
+    font-family: var(--title-font);
+    text-anchor: middle;
+}
+
+.introduce {
+    margin-top: var(--about-space-between);
+}
+
+.intro-content {
+    font-size: 1.8rem;
+    margin-bottom: var(--about-space-between);
+}

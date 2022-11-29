@@ -1,0 +1,146 @@
+.wrapper {
+    width: var(--post-width);
+    margin: auto;
+}
+
+.blog-header {
+    padding: var(--post-header-padding);
+
+}
+
+.title {
+    font-family: var(--title-font);
+    font-size: 3.6rem;
+}
+
+.time-update {
+    &::after {
+        content: " \b7  ";
+    }
+}
+
+.time,
+.description {
+    font-weight: 400;
+    color: var(--color-dark);
+}
+
+.thumb {
+    img {
+        width: 100%;
+    }
+}
+
+.body {
+    padding: var(--post-content-padding);
+}
+
+.content {
+    margin-top: 48px;
+    font-size: 1.8rem;
+}
+
+.new-post {
+    .blog-header {
+
+        .title,
+        .description {
+            display: block;
+            outline: none;
+            border: none;
+            width: 100%;
+            background-color: transparent;
+
+            &:focus {
+                background-color: var(--color-input);
+            }
+        }
+
+        .description {
+            min-height: 40px;
+        }
+    }
+
+    .thumb-btn {
+        padding: 10px 16px;
+        background-color: var(--colors-dark);
+        display: inline-block;
+        color: var(--color-light);
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+
+    .thumb {
+        position: relative;
+    }
+
+    .delete-thumb {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 3.2rem;
+        color: rgba(0, 0, 0, 0.7);
+        cursor: pointer;
+
+        &:hover {
+            color: var(--color-light);
+        }
+    }
+
+    .submit-btn {
+        display: flex;
+        justify-content: center;
+        margin-bottom: var(--button-footer-space);
+    }
+
+    .back-icon {
+        font-size: 2.8rem;
+        position: fixed;
+        left: 40px;
+        top: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .submit-btn button {
+        margin-bottom: 50px;
+    }
+}
+
+.comments-container {
+    padding-top: 40px;
+}
+
+.comment-input {
+    display: flex;
+}
+
+.input-field {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.comment-input textarea {
+    width: 100%;
+    min-height: 80px;
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+    padding: 10px;
+}
+
+ul.comments-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+@media screen and (max-width: 984px) {
+    .wrapper {
+        width: auto;
+    }
+}

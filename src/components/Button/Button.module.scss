@@ -1,0 +1,20 @@
+.wrapper {
+    padding: 16px 32px;
+    background-color: #232323;
+    color: var(--color-light) !important;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.wrapper.small {
+    padding: 8px 16px;
+    font-size: 1.4rem;
+}
+
+.wrapper+.wrapper {
+    margin-left: 15px;
+}
