@@ -5,19 +5,25 @@ import { useSelector } from 'react-redux'
 import { Avatar, Col, Row } from 'antd'
 import { useEffect, useState } from 'react'
 import { getUser } from '../../api/usersApi'
+import * as postApi from "../../api/postApi"
+import PostItemProfile from '../../components/PostItem/PostItemProfile'
+
 
 const cx = classNames.bind(styles)
 
 function Profile() {
     const userState = useSelector((state) => state.user)
     const [user, setUser] = useState({})
+    const [blog, setBlog] = useState([])
     useEffect(() => {
         const fetchData = async () => {
             const data = getUser(userState.username)
+            const blogData = await postApi.getAll()
             setUser(data)
+            setBlog(blogData)
         }
         fetchData()
-    }, [userState.username])
+    }, [userState.username, blog])
     return (
         <div className={cx('wrapper')}>
             <Row gutter={40}>
@@ -38,8 +44,13 @@ function Profile() {
                 </Col>
                 <Col span={18}>
                     <div className={cx('user-project')}>
-                        <h1 className={cx('title')}>Favourite Blogs</h1>
+                        <h1 className={cx('title')}>Blogs</h1>
                         <div className={cx('project-container')}>
+                            {blog.slice(1).slice(-3).map((post, id) => {
+                                return (
+                                    <PostItemProfile item={post} key={id} />
+                                )
+                            })}
                         </div>
                     </div>
                 </Col>
